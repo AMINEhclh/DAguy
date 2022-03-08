@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minecraft</title>
+    <link rel="stylesheet" href="minecraft.css">
+    <style>
+   
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a   href="outer wilds.html">Outer Wilds</a></li>
+        <li><a class="active" href="minecraft.html">Minecraft</a></li>
+        <li><a href="nier.html">NieR:automata</a></li>
+        <li><a href="wow.html">World Of WarCraft</a></li>
+        <li><a href="division.html">The Division</a></li>
+        <li><a href="lol.html">League Of Legends</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+      </ul>
+
+    <h1 id="title">Minecraft</h1>
+    
+    <h3 id="p1">The Best Selling Video Game Of All The Time </h3>
+    <dl id="about">
+        <dt><strong> about Minecraft</strong></dt>
+        <dd>Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. <br> The game was created by Markus "Notch" Persson in the Java programming language. <br> Following several early private testing versions, <br> it was first made public in May 2009 before fully releasing in November 2011, <br> with Jens "Jeb" Bergensten then taking over development. <br> Minecraft has since been ported to several other platforms and is the best-selling video game of all time, <br> with over 238 million copies sold and nearly 140 million monthly active users as of 2021.</dd>
+    </dl>
+    <h2></h2>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="minecraft.jpg" style="width:100%">
+          <div class="text">Minecraft</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="min5.jpg" style="width:100%">
+          <div class="text">Minecraft</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="min2.jpg" style="width:100%" height="570">
+          <div class="text">Minecraft</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="min3.jpg" style="width:100%" height="570">
+            <div class="text">Minecraft</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="min4.jpg" style="width:100%">
+            <div class="text">Minecraft</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+<h1 id="h2">to install</h1>
+<img src="ins.png" alt="" id="install" style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+" width="120" height="120">
+<div style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+">
+<a  href="https://www.minecraft.net/fr-fr/get-minecraft"><img src="mojang.jpg" alt="" width="500" height="300" ></a>
+<a  href="https://tlauncher.org/en/download_1/"><img src="tl.png" alt="" width="500" height="300" ></a>
+</div>
+
+<p>copyright © 2022-2023 <strong>DaRealGuy</strong></p>
+</body>
+</html>

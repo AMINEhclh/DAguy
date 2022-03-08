@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League OF Legends</title>
+    <link rel="stylesheet" href="lol.css">
+    <style>
+   
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a   href="outer wilds.html">Outer Wilds</a></li>
+        <li><a  href="minecraft.html">Minecraft</a></li>
+        <li><a  href="nier.html">NieR:automata</a></li>
+        <li><a  href="wow.html">World Of WarCraft</a></li>
+        <li><a  href="division.html">The Division</a></li>
+        <li><a class="active" href="lol.html">League Of Legends</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+      </ul>
+
+    <h1 id="title">League Of Legends</h1>
+    
+    <h3 id="p1"> A Multiplayer Online Battle Arena </h3>
+    <dl id="about">
+        <dt><strong>about League Of Legends</strong> </dt>
+        <dd>League of Legends (LoL), commonly referred to as League,<br> is a 2009 multiplayer online battle arena video game developed and published by Riot Games.<br> Inspired by Defense of the Ancients, a custom map for Warcraft III,<br> Riot's founders sought to develop a stand-alone game in the same genre.<br> Since its release in October 2009, the game has been free-to-play and is monetized through purchasable character customization.<br> The game is available for Microsoft Windows and macOS.</dd> 
+    </dl>
+    <h2></h2>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="lol1.jpg" style="width:100%">
+          <div class="text">League Of Legends</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="lol2.jpg" style="width:100%" height="570">
+          <div class="text">League Of Legends</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="lol3.jpeg" style="width:100%" >
+          <div class="text">League Of Legends</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="lol4.png" style="width:100%">
+            <div class="text">League Of Legends</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="lol5.jpg" style="width:100%">
+            <div class="text">League Of Legends</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+<h1 id="h2">to install</h1>
+<img src="ins.png" alt="" id="install" style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+" width="120" height="120">
+<div style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+">
+<a  href="https://www.leagueoflegends.com/fr-fr/"><img src="riot.png" alt="" width="500" height="300" ></a>
+
+</div>
+
+<p>copyright © 2022-2023 <strong>DaRealGuy</strong></p>
+</body>
+</html>

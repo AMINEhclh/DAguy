@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outer wilds</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+   
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active"  href="outer wilds.html">Outer Wilds</a></li>
+        <li><a href="minecraft.html">Minecraft</a></li>
+        <li><a href="nier.html">NieR:automata</a></li>
+        <li><a href="wow.html">World Of WarCraft</a></li>
+        <li><a href="division.html">The Division</a></li>
+        <li><a href="lol.html">League Of Legends</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+      </ul>
+
+    <h1 id="title">Outer Wilds</h1>
+    
+    <h3 id="p1">Winner of Best Game at the 2020 BAFTA  </h3>
+    <dl id="about">
+        <dt><strong> about outer wilds</strong></dt>
+        <dd>Named Game of the Year 2019 by Giant Bomb, Polygon, Eurogamer, and The Guardian, <br> Outer Wilds is a critically-acclaimed and award-winning open world mystery<br> about a solar system trapped in an endless time loop. </dd>
+    </dl>
+    <h2></h2>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="outerwilds.jpg" style="width:100%">
+          <div class="text">Outer Wilds</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="outer1.jpg" style="width:100%">
+          <div class="text">Outer Wilds</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="outer2.jpg" style="width:100%">
+          <div class="text">Outer Wilds</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="outer 3.jpg" style="width:100%">
+            <div class="text">Outer Wilds</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="outer4.jpg" style="width:100%">
+            <div class="text">Outer Wilds</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+<h1 id="h2">to install</h1>
+<img src="ins.png" alt="" id="install" style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+" width="120" height="120">
+<div style="text-align: center; display: block; margin-left: auto; margin-right: auto;;
+">
+<a  href="https://store.steampowered.com/app/753640/Outer_Wilds/"><img src="steam.jpeg" alt="" width="500" height="300" ></a>
+<a  href="https://steamunlocked.net/outer-wilds-free-pc-download/"><img src="unlocked.jpg" alt="" width="500" height="300" ></a>
+</div>
+
+<p>copyright © 2022-2023 <strong>DaRealGuy</strong></p>
+</body>
+</html>
